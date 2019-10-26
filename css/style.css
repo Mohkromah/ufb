@@ -310,12 +310,11 @@ nav {
   display: flex;
   justify-content: space-evenly;
   text-align: left;
-  padding: 2rem 0;
 }
 
 .tracking img {
   height: 430px;
-  margin-top: 7rem;
+  margin-top: 5rem;
   margin-right: 4rem;
 }
 

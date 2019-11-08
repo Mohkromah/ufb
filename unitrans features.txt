@@ -1,0 +1,24 @@
+Features that could improve unitrans website
+---------------------------------------------------
+
+User features
+------------------------------
+User registration and login
+Online payment of transfer
+Money Transfer request should be sent to agent based on location 
+Forex exchange daily rate for all currency in liberia and ghana
+Bank deposit request 
+Send money to mobile wallet
+TTS agent form
+Tracking of transfer
+testimonial app
+online web chat
+
+
+
+Admin features
+------------------------------
+Sees money transfer history
+
+
+

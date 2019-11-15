@@ -1,15 +1,95 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'poppins', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.infoBar {
+  background: #fe840d;
+  width: 100%;
+  height: 50px;
+  padding: 0 4rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.infoBar img {
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+.marg {
+  margin-left: 4rem;
+}
+
+.marg2 {
+  padding-left: 10rem;
+}
+
+.register {
+  padding: 15px 25px;
+  background: #2dbe61;
+  border-radius: 15px;
+}
+
+.register:hover {
+  opacity: 0.8;
+}
+
+.register a {
+  color: white !important;
+}
+
+nav {
+  height: 14vh;
+  background: rgb(247, 245, 245);
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  height: 80px;
+  top: 6px;
+  position: absolute;
+  margin-left: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 80%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 4rem;
+  text-transform: uppercase;
+}
+
+.nav-links li a {
+  color: #fe840d;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #2dbe61;
+  transition: 0.4s ease-out;
 }
 
 #myBtn {
@@ -20,22 +100,22 @@ html {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #fe840d; /* Set a background color */
+  background-color: #2dbe61; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 70px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   animation: fade 1s;
 }
 
 #myBtn img {
-  height: 25px;
+  height: 22px;
 }
 
 #myBtn:hover {
-  background-color: #2dbe61; /* Add a dark-grey background on hover */
+  background-color: #fe840d; /* Add a dark-grey background on hover */
 }
 
 p {
@@ -58,166 +138,20 @@ p {
   font-weight: 500;
 }
 
-.btn-outline {
-  border: 1px solid #2dbe61;
-  color: #2dbe61;
-  background: none;
-}
-
-.btn-outline:hover {
-  background: #2dbe61;
-  color: white;
-  transition: 0.4s ease-out;
-}
-
-.btn {
-  border-radius: 10px;
-  margin-top: 3rem;
-  background: none;
-  font-size: 1rem;
-  width: 180px;
-  height: 60px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.btn-white {
-  background: white;
-  color: #2dbe61;
-}
-
-.btn-white:hover {
-  transition: 0.4s ease-out;
-  opacity: 0.8;
-}
-
-.btn-green {
-  background: #2dbe61;
-  color: white;
-}
-
-.btn-green:hover {
-  transition: 0.4s ease-out;
-  opacity: 0.8;
-}
-
-/* -------------------------------------------------------------
-Heading Area */
-
-header {
+/* Footer section styling */
+#hero {
+  padding: 4rem;
   position: relative;
-}
-
-.subNav {
-  padding: 0 5rem;
-  color: white;
-  background: #fe840d;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-}
-
-.subNav img {
-  margin-right: 7px;
-  height: 18px;
-}
-
-.subNav p {
-  margin-right: 25px;
-}
-
-.social ul {
-  position: absolute;
-  right: 2px;
-  top: 0;
-  padding-right: 5rem;
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.social ul li {
-  padding: 10px;
-}
-
-.social img {
-  height: 18px;
-}
-
-nav {
-  background: white;
-  color: #fe840d;
-  height: 85px;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1rem;
-}
-
-nav img {
-  margin-top: 4px;
-  height: 70px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: #fe840d;
-}
-
-nav ul li {
-  list-style: none;
-  padding: 26px;
-  text-transform: uppercase;
-}
-
-nav ul li:hover {
-  color: #2dbe61;
-  transition: 0.4s ease-out;
-}
-
-nav p {
-  margin-right: 15px;
-}
-
-.login {
-  margin-right: 4rem;
-}
-
-.register {
-  padding: 12px 30px;
-  color: white;
-  background: #2dbe61;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.register:hover {
-  color: white;
-  opacity: 0.8;
-}
-
-/* -------------------------------------------------------------
-Hero Area */
-
-.heroArea {
-  padding: 6rem 5rem;
   background: url(../img/hero.jpg);
   background-size: cover;
-  height: 680px;
   color: white;
+  height: 90vh;
 }
 
-.heroArea::before {
+#hero::before {
   content: '';
   position: absolute;
-  bottom: -9.8rem;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 200px;
@@ -225,49 +159,60 @@ Hero Area */
   clip-path: polygon(100% 10%, 0 100%, 100% 100%);
 }
 
-.heroArea h3 {
-  font-size: 1.7rem;
-  font-weight: 400;
+#hero .left {
+  padding-right: 5rem;
+  width: 60%;
 }
 
-.heroArea h2 {
-  font-size: 3.6rem;
+#hero h5 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+#hero h3 {
+  font-size: 3.7rem;
   font-weight: 500;
 }
 
-.heroArea h1 {
+#hero h1 {
   font-size: 4.7rem;
+  font-weight: 700;
 }
 
-.heroArea p {
-  padding-bottom: 3.4rem;
-  font-size: 1.2rem;
+#hero p {
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
 }
 
-.heroArea span {
-  padding: 18px 45px;
+#hero .left span {
+  padding: 20px 35px;
   border: 1px solid white;
-  border-radius: 25px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
-.heroArea span:hover {
+#hero .left span a {
+  color: white;
+}
+
+#hero .left span:hover {
   background: #fe840d;
-  border: none;
   transition: 0.4s ease-out;
+  border: none;
 }
 
 .sendMoney {
   position: absolute;
   padding: 3rem;
-  top: 16rem;
-  right: 5rem;
+  top: 6rem;
+  right: 6rem;
   height: 650px;
   background: white;
   color: rgb(59, 59, 59);
   width: 470px;
   border-radius: 50px;
   box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.1), 0 12px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .sendMoney h2 {
@@ -318,30 +263,44 @@ Hero Area */
   padding-left: 20px;
 }
 
-/* -------------------------------------------------------------
-Services */
+/* Services section styling */
 
 #services {
-  padding: 7rem 6rem;
+  padding: 6rem 4rem;
   position: relative;
   display: flex;
+  width: 100%;
+  background: white;
 }
 
-.left h4 {
-  color: #2dbe61;
-  font-weight: 400;
-  padding-bottom: 2rem;
+.serviceContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.left button {
-  border: none;
+.serviceContainer .last {
+  padding-bottom: 3rem;
 }
 
-.left p {
-  padding-right: 2rem;
+.serviceContainer .left .btn-green a {
+  color: white;
 }
 
-.left span {
+.serviceContainer .left .btn-green {
+  padding: 15px 25px;
+  text-align: center;
+  width: 170px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.serviceContainer .left .btn-green:hover {
+  opacity: 0.8;
+  transition: 0.4s ease-out;
+}
+
+.serviceContainer .left span {
   background: #2dbe61;
   height: 4px;
   width: 70px;
@@ -349,99 +308,85 @@ Services */
   margin-right: 1rem;
 }
 
-.right {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5rem;
+.serviceContainer h4 {
+  font-weight: 400;
+  padding-bottom: 1rem;
 }
 
-.box {
-  padding: 25px;
+.serviceContainer .right .box h4 {
+  font-weight: 600;
+}
+
+.serviceContainer .right {
+  display: flex;
+  margin-top: 7rem;
+  margin-left: 4rem;
+  text-align: center;
+}
+
+.serviceContainer .right .box {
+  padding: 2rem;
+  height: 250px;
   width: 250px;
   margin: 2rem 1rem;
-  border: 1px solid lightgray;
-  text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 1px solid darkgray;
 }
 
-.box h4 {
-  padding: 0.7rem 0;
+.serviceContainer .right img {
+  height: 90px;
 }
 
-.box img {
-  height: 100px;
-}
-
-/* -------------------------------------------------------------
-Tracking */
-
+/* Tracking section styling */
 #tracking {
-  padding: 5rem 6rem 3rem;
+  padding: 6rem 4rem;
   position: relative;
   display: flex;
-  background: #f7faff;
+  background: rgb(247, 245, 245);
 }
 
-.phone img {
-  width: 550px;
-  margin-right: 1rem;
+#tracking .left img {
+  width: 500px;
 }
 
-/* -------------------------------------------------------------
-How it works */
-
-/* #how {
-  padding: 5rem 10rem;
-  position: relative;
-  text-align: center;
-  background: white;
+#tracking .right {
+  width: 55%;
 }
 
-.items {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 2rem 0 2rem;
+#tracking .right p {
+  padding-bottom: 3rem;
 }
 
-.itemImgs img {
-  height: 130px;
-  padding: 15px;
-  background: #2dbe61;
-  border-radius: 50%;
-}
-
-.itemImgs {
-  border: 2px solid rgb(243, 245, 250);
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 50px;
-}
-
-.itemImgs:hover {
-  transition: 0.4s ease-out;
-  background: rgb(243, 245, 250);
-}
-
-.itemImgs h5 {
-  padding: 10px 0;
+#tracking .btn-outline a {
   color: #2dbe61;
-  font-size: 1.3rem;
-  font-weight: 400;
 }
 
-.itemImgs h3 {
-  padding-bottom: 10px;
-} */
+#tracking .btn-outline {
+  color: #2dbe61;
+  padding: 17px 30px;
+  border: 1px solid #2dbe61;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
-/* -------------------------------------------------------------
-Steps */
+#tracking .btn-outline:hover {
+  transition: 0.4s ease-out;
+  background: #2dbe61;
+}
+
+#tracking .btn-outline:hover a {
+  transition: 0.4s ease-out;
+  color: white;
+}
+
+/* Steps Section styling */
 
 #steps {
   padding: 2rem 6rem 7rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background: white;
 }
 
 #steps .space {
@@ -497,6 +442,24 @@ Steps */
   content: '\2796'; /* Unicode character for "minus" sign (-) */
 }
 
+#partner {
+  padding: 0.4rem 0 0;
+  background: rgb(247, 245, 245);
+  text-align: center;
+}
+
+/* Partner section styling */
+
+#partner img {
+  height: 40px;
+  margin: 0 4.5rem;
+  cursor: pointer;
+}
+
+#partner img:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* -------------------------------------------------------------
 Why Choose us */
 
@@ -504,7 +467,7 @@ Why Choose us */
   padding: 5rem 4rem 7rem;
   position: relative;
   text-align: center;
-  background: #f7faff;
+  background: #f9fbfd;
 }
 
 .whyChoose {
@@ -534,84 +497,6 @@ Why Choose us */
 }
 
 /* -------------------------------------------------------------
-partner */
-#partner {
-  padding: 0.4rem 0 0;
-  background: rgb(243, 243, 243);
-  text-align: center;
-}
-
-#partner img {
-  height: 40px;
-  margin: 0 4.5rem;
-  cursor: pointer;
-}
-
-#partner img:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* -------------------------------------------------------------
-review */
-
-#review {
-  padding: 5rem 6rem;
-  position: relative;
-  text-align: center;
-  background: white;
-}
-
-.owl-carousel .owl-item {
-  width: 350px !important;
-  margin-left: 5px;
-}
-
-.customer {
-  text-align: left;
-}
-
-.customer img {
-  height: 70px !important;
-  width: auto !important;
-  float: left !important;
-  margin-right: 1rem !important;
-}
-
-.reviewContent {
-  width: 100%;
-  height: 340px;
-  padding: 1.5rem;
-  margin: 2rem 1rem;
-  border-radius: 15px;
-  border: 0.8px solid #dfe3eb;
-}
-
-.rating h1 {
-  font-size: 2.5rem;
-}
-
-.rating img {
-  width: 22px !important;
-  display: inline !important;
-  margin-bottom: 1rem !important;
-}
-
-.customer h4 {
-  color: #2dbe61;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.reviewContent blockquote {
-  margin-bottom: 0.5rem;
-  color: gray;
-  text-align: left;
-  padding-bottom: 1rem;
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
-/* -------------------------------------------------------------
 contact */
 
 #contact {
@@ -628,8 +513,27 @@ contact */
   padding: 5rem 6rem;
 }
 
-.contactContainer button {
-  border: none;
+#contact p {
+  padding-bottom: 3rem;
+}
+
+#contact .btn-white a {
+  color: #2dbe61;
+}
+
+#contact .btn-white {
+  padding: 15px 25px;
+  text-align: center;
+  background: white;
+  width: 170px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#contact .btn-white:hover {
+  transition: 0.4s ease-out;
+  opacity: 0.8;
 }
 
 /* -------------------------------------------------------------
@@ -639,92 +543,60 @@ News */
   padding: 5rem 6rem;
   position: relative;
   text-align: center;
-  background: #f7faff;
+  background: #f9fbfd;
 }
 
 #news input {
   border: none;
   padding: 20px;
-}
-
-#news input:first-child {
-  border-right: 1px solid #2dbe61;
-  border-radius: 15px 0 0 15px;
+  margin: 3px 0;
+  width: 250px;
+  border-radius: 10px;
+  border: 0.5px solid #2dbe622d;
 }
 
 .newsSubmit {
+  margin: 1.5rem 0 !important;
   background: #2dbe61;
   color: white;
   cursor: pointer;
-  border-radius: 0 15px 15px 0;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 1rem;
 }
 
 .newsSubmit:hover {
   transition: 0.4s ease-out;
   opacity: 0.8;
 }
-/* -------------------------------------------------------------
-Footer */
+
+/* Footer section styling */
 
 #footer {
-  padding: 5rem 8rem 2rem;
-  position: relative;
+  padding: 4rem 6rem;
   background: white;
+  position: relative;
+}
+
+#footer hr {
+  margin: 1rem 0;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+.links li a {
+  padding-right: 2rem;
+  color: black;
 }
 
 .links {
   display: flex;
-  justify-content: space-between;
-}
-
-.links ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-.links ul li a:hover {
-  color: #2dbe61;
-  transition: 0.4s ease-out;
-}
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-}
-
-.copyright ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.copyright ul li a:hover {
-  color: #2dbe61;
-  transition: 0.4s ease-out;
-}
-
-#footer ul {
-  display: flex;
-}
-
-#footer ul li {
-  list-style: none;
-  padding-right: 1.5rem;
-}
-
-#footer ul li:last-child {
-  padding-right: 0;
-}
-
-hr {
-  margin: 1rem 0;
 }
 
 #footer span {
   color: #2dbe61;
-}
-
-.copyright p {
-  font-size: 0.8rem;
 }
 
 /* -------------------------------------------------------------
@@ -741,6 +613,7 @@ Tracking page */
 .trackBox {
   background: rgba(0, 0, 0, 0.8);
   padding: 5rem 6rem 7rem;
+  height: 80vh;
 }
 
 #trackTransfer p {
@@ -767,7 +640,7 @@ Tracking page */
 }
 
 /* -------------------------------------------------------------
-Find Location page */
+Location page */
 
 #location {
   position: relative;
@@ -874,7 +747,7 @@ Find Location page */
 /* -------------------------------------------------------------
 About us page */
 
-.backContainer {
+#aboutUs {
   background: url(../img/about.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -914,7 +787,7 @@ About us page */
 
 .ourTeam {
   padding: 5rem 6rem;
-  background: #f7faff;
+  background: #f9fbfd;
   text-align: center;
 }
 

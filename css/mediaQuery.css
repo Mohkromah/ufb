@@ -1,0 +1,373 @@
+@media screen and (max-width: 768px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 3px;
+    background: #fe840d;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 7%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: rgb(247, 245, 245);
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .marg2 {
+    padding-left: 0;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 1s;
+  }
+  .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 1.2s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+
+  /* Hero mobile section */
+
+  .infoBar {
+    padding-left: 2rem;
+  }
+
+  .infoBar img {
+    height: 15px;
+  }
+
+  .logo img {
+    margin-left: 2rem;
+    height: 65px;
+    padding-bottom: 5px;
+  }
+
+  nav {
+    height: 10vh;
+  }
+
+  #hero {
+    padding: 2rem;
+    margin: 0;
+    height: 70vh;
+  }
+
+  #hero:before {
+    content: '';
+    margin-bottom: 0;
+    height: 210px;
+  }
+
+  #hero .left {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #hero .left span {
+    padding: 15px 25px;
+  }
+
+  #hero h5 {
+    font-size: 1.4rem;
+  }
+  #hero h3 {
+    font-size: 2.2rem;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .sendMoney {
+    display: none;
+  }
+
+  /* Service Mobile styling */
+
+  #services {
+    padding: 4rem 2rem;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .serviceContainer {
+    flex-direction: column;
+  }
+
+  .serviceContainer .right {
+    margin-top: 4rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .serviceContainer .right .box {
+    height: 275px;
+    width: 160px;
+    margin: 0 1.2rem 1.2rem 0;
+    padding: 0.5rem;
+    border-radius: 0;
+    border: 0.2px solid lightgray;
+  }
+
+  /* .serviceContainer .right {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .serviceContainer .right .box {
+    width: 80%;
+    height: 300px;
+    border: 0.5px solid lightgray;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .serviceContainer .top .box {
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  .serviceContainer .top .box:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .serviceContainer .bottom .box {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .serviceContainer .bottom .box:last-child {
+    margin: 0;
+  } */
+
+  .serviceContainer .left .btn-green {
+    width: 340px;
+    margin-bottom: 2rem;
+  }
+
+  /* Tracking Mobile styling */
+
+  #tracking {
+    flex-direction: column;
+    padding: 2rem 2rem 5rem;
+  }
+
+  #tracking .left img {
+    width: 340px;
+  }
+
+  #tracking .right {
+    width: 100%;
+  }
+
+  #tracking .btn-outline {
+    padding: 17px 110px;
+  }
+
+  /* Steps Mobile styling */
+
+  #steps {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  #steps .right img {
+    width: 300px;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  /* Partner Mobile styling */
+
+  #partner {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+  }
+
+  #partner img {
+    height: 20px;
+    margin: 0 1rem;
+  }
+
+  /* Partner Mobile styling */
+
+  .contactContainer {
+    padding: 2rem 2rem 4rem;
+  }
+
+  /* Why choose us Mobile styling */
+
+  #why {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .whyChoose {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content {
+    width: 80%;
+    padding: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  /* Newsletter us Mobile styling */
+
+  #news {
+    padding: 2rem;
+  }
+
+  #news input {
+    width: 200px;
+  }
+
+  #footer {
+    padding: 2rem;
+  }
+
+  /* Tracking page Mobile styling */
+
+  .trackBox {
+    padding: 2rem;
+    height: 70vh;
+  }
+
+  .trackBox h1 {
+    padding-top: 2rem;
+  }
+
+  .trackBox p br {
+    display: none;
+  }
+
+  /* Location page Mobile styling */
+
+  .locationContainer {
+    padding: 2rem;
+  }
+
+  .locationContainer h1 {
+    padding-top: 2rem;
+  }
+
+  .tabcontent .top,
+  .middle,
+  .bottom {
+    flex-direction: column;
+  }
+
+  .tabcontent .address {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+  }
+
+  /* About us page Mobile styling */
+
+  .aboutContainer {
+    padding: 2rem 2rem 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .aboutContainer h1 {
+    padding-top: 2rem;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .vision {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .ourTeam {
+    padding: 2rem;
+  }
+
+  .teamContainer {
+    flex-direction: column;
+  }
+
+  .teamMember {
+    width: 260px;
+  }
+}

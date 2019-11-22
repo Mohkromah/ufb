@@ -1,101 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome icon -->
+
+    <script src="https://kit.fontawesome.com/9a8af5029a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- animation packages -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Owl carousel -->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- custom style sheet -->
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaQuery.css">
+
     <title>Unitrans Money Remittance</title>
   </head>
   <body>
-    <div class="infoBar">
+    <!-- Infobar -->
+
+    <div class="infoBar animated fadeIn slower">
       <img src="img/iPhone.png" alt="" />
       <p>+233244630250</p>
       <img class="marg" src="img/email.png" alt="" />
       <p>info@unitrans.com</p>
     </div>
-    <nav>
-      <div class="hamburger" onclick="hamToggle(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+
+    <!-- navbar menu -->
+
+    <nav
+      class="navbar navbar-light navbar-expand-md bg-faded justify-content-center animated fadeIn"
+    >
+      <a href="/" class="navbar-brand d-flex w-50 mr-auto"
+        ><img src="img/logo2.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbar3"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking.html">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-success">Register</button>
+          </li>
+        </ul>
       </div>
-      <div class="logo">
-        <img src="img/logo2.png" alt="" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tracking.html">Track</a></li>
-        <li><a href="location.html">Locations</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="marg2"><a href="#">Login</a></li>
-        <li class="register"><a href="#">Register</a></li>
-      </ul>
     </nav>
 
-    
     <section id="trackTransfer">
-      <div class="trackBox">
-          <h1 class="heading1 animated zoomIn">Track Transfer Status</h1>
-          <p class="animated fadeInDown slower">
-            Quicky check the status of your transfer with little effort. <br>
-            No need to visit our office if you aren't sure!
-          </p>
-          <form action="">
-            <input class="animated zoomIn slow delay-1s" type="text" placeholder="MTCN Number" required /> <br />
-            <input class="checkTransfer animated slower zoomIn delay-1s" type="submit" value="Check Status" />
-          </form>
-        
-      </div>
-    </section>
+        <div class="innerContent">
+          <div class="row">
+            <div class="col-lg-12">
+  
+                    <h1 class="display-4 animated zoomIn">Track Transfer Status</h1>
+                    <p class="animated fadeInDown slower">
+                      Quicky check the status of your transfer with little effort. <br>
+                      No need to visit our office if you aren't sure!
+                    </p>
+                    <form action="">
+                      <input class="animated zoomIn slow delay-1s" type="text" placeholder="MTCN Number" required /> <br />
+                      <input class="checkTransfer animated slower zoomIn delay-1s" type="submit" value="Check Status" />
+                    </form>
+                  
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Go to top of page -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <img src="img/arrow.png" alt="" />
     </button>
 
-    <section id="footer">
-        <ul class="links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracking.html">Track</a></li>
-          <li><a href="location.html">Locations</a></li>
-        </ul>
+   
 
-        <!-- <ul class="social">
-          <li>
-            <a href="#"><img src="img/facebook-black.png" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/twitter-black.png" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/googleplus-black.png" alt=""/></a>
-          </li>
-        </ul> -->
+    
+    <section id="footer">
+      <div class="footerContainer">
+        <div class="row">
+          <div class="col-lg-8">
+            <ul class="links">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="location.html">Locations</a></li>       
+          </div>
+          <div class="col-lg-4">
+            <ul class="icons">
+              <li><i class="fab fa-facebook-f fa-1x"></i></li>
+            <li><i class="fab fa-twitter fa-1x"></i></li>
+            <li><i class="fab fa-google-plus-g fa-1x"></i></li>
+          </ul>
+          </div>
+        </div>
       </div>
-      <hr />
+ 
       <div class="copyright">
-        <p>Copyright © 2019 <span>Unitrans.</span> All Rights Reserved.</p>
+         <p>Copyright © 2019 <span>Unitrans.</span> All Rights Reserved.</p>
       </div>
     </section>
 
+    
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+      <!-- AOS Scroll loader -->
+
+      <script src="js/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 70,
+          duration: 1000
+        });
+      </script>
+
+
+    <!-- Owl package javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom javascript -->
     <script src="js/app.js"></script>
-
-    <!-- AOS Scroll loader -->
-
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 70,
-        duration: 1000
-      });
-    </script>
-
   </body>
 </html>

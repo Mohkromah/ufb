@@ -1,28 +1,3 @@
-// Hamburger menu
-
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  links.forEach(link => {
-    link.classList.toggle('fade');
-  });
-});
-
-// Hamburger menu toggle
-
-function hamToggle(x) {
-  x.classList.toggle('change');
-}
-
-// NavLinks fixed position should disappear when scroll is greater than 20
-
-// do something
-
-// Scroll to page top
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction();
@@ -42,7 +17,40 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// --------------------------------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------------------
+
+// testimonial carousel
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      loop: true
+    },
+    768: {
+      items: 2,
+      nav: false,
+      loop: true
+    },
+    1024: {
+      items: 3,
+      nav: false,
+      loop: true
+    }
+  }
+});
+
+
+// --------------------------------------------------------------------------------------
+
 // Location Tabs
 
 function openPage(pageName, elmnt, color) {

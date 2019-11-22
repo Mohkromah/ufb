@@ -1,181 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome icon -->
+
+    <script src="https://kit.fontawesome.com/9a8af5029a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- animation packages -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Owl carousel -->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- custom style sheet -->
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaQuery.css">
+
     <title>Unitrans Money Remittance</title>
   </head>
   <body>
+    <!-- Infobar -->
+
     <div class="infoBar animated fadeIn slower">
       <img src="img/iPhone.png" alt="" />
       <p>+233244630250</p>
       <img class="marg" src="img/email.png" alt="" />
       <p>info@unitrans.com</p>
     </div>
-    <nav>
-      <div class="hamburger animated fadeIn slower" onclick="hamToggle(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+
+    <!-- navbar menu -->
+
+    <nav
+      class="navbar navbar-light navbar-expand-md bg-faded justify-content-center animated fadeIn"
+    >
+      <a href="/" class="navbar-brand d-flex w-50 mr-auto"
+        ><img src="img/logo2.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbar3"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking.html">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-success">Register</button>
+          </li>
+        </ul>
       </div>
-      <div class="logo animated fadeIn slower">
-        <img src="img/logo2.png" alt="" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tracking.html">Track</a></li>
-        <li><a href="location.html">Locations</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="marg2"><a href="#">Login</a></li>
-        <li class="register"><a href="#">Register</a></li>
-      </ul>
     </nav>
+
+    <section id="hero">
+      <div class="heroContainer">
+        <div class="innerContent">
+            <div class="row">
+              <div class="col-lg-8">
+                  <h2 class="animated zoomIn slow">EASY WAY TO</h1>
+                    <h1 class="display-3 animated fadeInDown slower">Transfer Money</h1>
+                    <h1 class="display-2 animated fadeIn slower delay-1s">IN REAL TIME!</h1>
+                    <p class="animated fadeInUp slow delay-1s">We're simply the best in terms of making easy transfer <br> with low fees, fast transaction, 24 / 7 support</p>
+                    <button type="button" class="btn btn-outline-warning btn-lg animated fadeIn slower delay-1s">Get Started</button>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                  <div class="sendMoney animated fadeIn Slower delay-1s">
+                      <h2>Send Money</h2>
+                      <form action="">
+                        <label for="amount">Amount</label>
+                        <div class="input1">
+                          <input type="text" placeholder="$1,000.00" />
+                          <select>
+                            <option value="ld"> LD</option>
+                            <option value="ghc"> GHC</option>
+                            <option value="usd">USD</option>
+                          </select>
+                        </div>
+                        <label for="country">Receiver Country</label>
+                        <div class="input1 input2">
+                          <select class="countries">
+                            <option value="gh" disabled selected hidden
+                              >Select Country</option
+                            >
+                            <option value="lib">Liberia</option>
+                            <option value="gh">Ghana</option>
+                          </select>
+                        </div>
+                        <label for="delivery">Delivery Type</label>
+                        <div class="input1 input3">
+                          <select class="countries">
+                            <option value="gh" disabled selected hidden
+                              >Choose Delivery Type</option
+                            >
+                            <option value="lib">Cash Pickup </option>
+                            <option value="gh">Mobile Money</option>
+                            <option value="gh">Bank Deposit</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg btn-block">Continue Transaction</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>      
+      </div>
+    </section>
+
+    <!-- Go to top of page -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <img src="img/arrow.png" alt="" />
     </button>
 
-    <section id="hero">
-        <div class="left">
-            <h5 class="animated zoomIn slow">EASY WAY TO</h5>
-            <h3 class="animated fadeInDown slower">Transfer Money</h3>
-            <h1 class="animated fadeIn slower delay-1s">IN REAL TIME!</h1>
-            <p class="animated fadeInUp slow delay-1s">We're simply the best in terms of making easy transfer with low fees, fast transaction, 24 / 7 support</p>
-            <span class="animated fadeIn slower delay-1s"><a href="#">Get Started</a></span>
-        </div>
-        <div class="sendMoney animated fadeIn Slower delay-1s">
-            <h2>Send Money</h2>
-            <form action="">
-              <label for="amount">Amount</label>
-              <div class="input1">
-                <input type="text" placeholder="$1,000.00" />
-                <select>
-                  <option value="ld"> LD</option>
-                  <option value="ghc"> GHC</option>
-                  <option value="usd">USD</option>
-                </select>
-              </div>
-              <label for="country">Receiver Country</label>
-              <div class="input1 input2">
-                <select class="countries">
-                  <option value="gh" disabled selected hidden
-                    >Select Country</option
-                  >
-                  <option value="lib">Liberia</option>
-                  <option value="gh">Ghana</option>
-                </select>
-              </div>
-              <label for="delivery">Delivery Type</label>
-              <div class="input1 input3">
-                <select class="countries">
-                  <option value="gh" disabled selected hidden
-                    >Choose Delivery Type</option
-                  >
-                  <option value="lib">Cash Pickup </option>
-                  <option value="gh">Mobile Money</option>
-                  <option value="gh">Bank Deposit</option>
-                </select>
-              </div>
-              <input class="submit" type="submit" value="Continue Transaction" />
-            </form>
-          </div>
-      </section>
-
-   <section id="services">
-          <div class="serviceContainer" data-aos="fade-in">
-            <div class="left">
-              <h4>
-                <span></span>
-                OUR SERVICES
-              </h4>
-              <h1 class="heading1">
-                Transfer Money in a Minute securely
-              </h1>
-              <p data-aos="fade-in">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+    <section id="services">
+      <div class="innerContent">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 data-aos="fade-left">
+              <span></span>
+              OUR SERVICES
+            </h4>
+            <h1 class="display-4" data-aos="fade-right">Transfer Money in a Minute securely</h1>
+            <p data-aos="fade-down"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+              fuga voluptate debitis, fugit, nihil iure molestiae repudia
+              numquam, aperiam sed hic id explicabo aspernatur quaerat!</p>
+              <p data-aos="fade-down"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+                fuga voluptate debitis, fugit, nihil iure molestiae repudia
+                numquam, aperiam sed hic id explicabo aspernatur quaerat!</p>
+              <p data-aos="fade-down"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
                 fuga voluptate debitis, fugit, nihil iure molestiae repudia
                 numquam, aperiam sed hic id explicabo aspernatur quaerat!
-              </p>
-              <br />
-    
-              <p class="last" data-aos="fade-in">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-                fuga voluptate debitis, fugit, nihil iure molestiae repudian
-                numquam, aperiam sed hic id explicabo aspernatur quaerat!
-              </p>
-    
-              <span class="btn-green"><a href="#">Learn More</a></span>
-            </div>
-            <div class="right">
-              <div class="top">
-                <div class="box" data-aos="fade-left">
-                  <img src="img/send-money.png" alt="" />
-                  <h4>Money Transfer</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    amet
-                  </p>
-                </div>
-                <div class="box" data-aos="fade-right">
-                  <img src="img/secure-payment.png" alt="" />
-                  <h4>Bank Deposit</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    amet
-                  </p>
-                </div>
-              </div>
-              <div class="bottom">
-                <div class="box" data-aos="fade-left">
-                  <img src="img/money.png" alt="" />
-                  <h4>Forex Exchange</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    amet
-                  </p>
-                </div>
-                <div class="box" data-aos="fade-right">
-                  <img src="img/purse.png" alt="" />
-                  <h4>Mobile Wallet</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    amet
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                sit amet consectetur adipisicing elit. Molestias
+                fuga voluptate debitis, fugit, nihil iure molestiae repudia
+                numquam, aperiam sed hic id explicabo aspernatur quaerat!</p>
+                <button type="button" class="btn btn-success btn-lg" data-aos="fade-down">Learn More</button>
 
-   <section id="tracking">
-          <div class="left">
-              <img src="img/iso.png" alt="">
           </div>
-          <div class="right">
-              <h1 class="heading1">Track Your Transfer in Real Time!</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam omnis modi ratione molestias repudiandae dolorum ab est dolores aliquam tempora voluptatem fuga, cum totam. ratione molestias repudiandae temporal searching.</p>
-              <span class="btn-outline"><a href="#">Start Tracking</a></span>
+
+          <div class="col-lg-3">
+              <div class="box" data-aos="fade-left">
+                <img src="img/send-money.png" alt="" />
+                <h4>Money Transfer</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur
+                  amet
+                </p>
+              </div>
+
+              <div class="box" data-aos="fade-right">
+                <img src="img/money.png" alt="" />
+                <h4>Forex Exchange</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur
+                  amet
+                </p>
+              </div>
+            
           </div>
+
+          <div class="col-lg-3">
+            <div class="box" data-aos="fade-up">
+              <img src="img/secure-payment.png" alt="" />
+              <h4>Bank Deposit</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                amet
+              </p>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+              <img src="img/bus-stop.png" alt="" />
+              <h4>TTS Agent</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                amet
+              </p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+              <img src="img/purse.png" alt="" />
+              <h4>Mobile Wallet</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                amet
+              </p>
+            </div>
+          
+        </div>
+
+
+        </div>
+      </div>
     </section>
 
-     <section id="steps">
-          <div class="left">
-            <h1 class="heading1" data-aos="fade-in">Send Money Process</h1>
-            <p class="space" data-aos="fade-in">
+    <section id="tracking">
+      <div class="innerContent">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/iso.png" alt="" data-aos="fade-right">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-4" data-aos="fade-left">Track Your Transfer in Real Time!</h1>
+                <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam omnis modi ratione molestias repudiandae dolorum ab est dolores aliquam tempora voluptatem fuga, cum totam. ratione molestias repudiandae temporal searching.</p>
+                <button type="button" class="btn btn-outline-success btn-lg" data-aos="fade-down">Start Tracking</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="innerContent">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-4" data-aos="fade-left">Send Money Process</h1>
+            <p class="space" data-aos="fade-right">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
               quibusdam eveniet quasi omnis nesciunt quisquam.
             </p>
     
-            <button class="accordion" data-aos="fade-up">
+            <button class="accordion" data-aos="fade-left">
               Provide Amount
             </button>
             <div class="panel">
@@ -205,128 +290,307 @@
               </p>
             </div>
           </div>
-          <div class="right" data-aos="fade-up">
-            <img src="img/payment-service-3.png" alt="" />
+          <div class="col-lg-6">
+            <img src="img/payment-service-3.png" alt="" data-aos="fade-left" />
           </div>
+        </div>
+      </div>
     </section>
 
-    
-    <section id="partner" data-aos="fade-in">
-      <img src="img/mtn.png" alt="" />
-      <img src="img/airtel.png" alt="" />
-      <img src="img/voda.png" alt="" />
-      <img src="img/lonestar.png" alt="" />
-      <img src="img/orange.png" alt="" />
+    <section id="partner">
+      <div class="innerContent">
+        <div class="col-lg-12">
+          <img src="img/mtn.png" alt="" data-aos="fade-right" />
+          <img src="img/airtel.png" alt="" data-aos="fade-left" />
+          <img src="img/voda.png" alt="" data-aos="fade-down" />
+          <img src="img/lonestar.png" alt="" data-aos="fade-right" />
+          <img src="img/orange.png" alt="" data-aos="fade-left" />
+        </div>
+      </div>
     </section>
 
     <section id="why">
-      <h1 class="heading1">Why Choose us?</h1>
-      <div class="whyChoose">
-        <div class="content" data-aos="fade-right">
-          <img src="img/money-transfer.svg" alt="" />
-          <h3>Fast Transfer</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="content" data-aos="fade-left">
-          <img src="img/money.svg" alt="" />
-          <h3>Low Fees</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-        </div>
-      </div>
-      <div class="whyChoose">
-        <div class="content" data-aos="fade-right">
-          <img src="img/shield.svg" alt="" />
-          <h3>Reliable Service</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="content" data-aos="fade-left">
-          <img src="img/call-center.svg" alt="" />
-          <h3>Support</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-        </div>
-      </div>
+     <div class="innerContent">
+        <h1 class="display-4">Why Choose us?</h1>
+       <div class="row">
+         <div class="col-lg-6">
+
+              <div class="content" data-aos="fade-up">
+                <img src="img/money-transfer.svg" alt="" />
+                <h3>Fast Transfer</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div class="content" data-aos="fade-left">
+                <img src="img/money.svg" alt="" />
+                <h3>Low Fees</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </div>
+         </div>
+
+         <div class="col-lg-6">
+            <div class="content" data-aos="fade-down">
+              <img src="img/shield.svg" alt="" />
+              <h3>Reliable Service</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+
+            <div class="content" data-aos="fade-right">
+              <img src="img/call-center.svg" alt="" />
+              <h3>Support</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+         </div>
+
+       </div>
+     </div>
     </section>
+
+    <section id="testimonial">
+        <div class="innerContent">
+          <h1 class="display-4" data-aos="fade-in">What Clients Say</h1>
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme" data-aos="fade-in">
+                    <div class="item">
+                        <div class="review">
+                            <h2>5.00</h2>
+                            <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                          </ul>
+                          <blockquote>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                          </blockquote>
+                          <div class="client">
+                            <img src="img/pic1.jpg" alt="">
+                            <h5>Jenny Slate</h5>
+                            <h7>Business Owner</h7>
+                          </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                      <div class="review">
+                        <h2>5.00</h2>
+                        <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <blockquote>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                      </blockquote>
+                      <div class="client">
+                        <img src="img/pic2.jpg" alt="">
+                        <h5>Jacqueline Shan</h5>
+                        <h7>Business Owner</h7>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                        <div class="review">
+                            <h2>5.00</h2>
+                            <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                          </ul>
+                          <blockquote>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                          </blockquote>
+                          <div class="client">
+                            <img src="img/pic3.jpg" alt="">
+                            <h5>John Doe</h5>
+                            <h7>Business Owner</h7>
+                          </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="review">
+                            <h2>5.00</h2>
+                            <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                          </ul>
+                          <blockquote>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                          </blockquote>
+                          <div class="client">
+                            <img src="img/pic4.jpg" alt="">
+                            <h5>Marcus Shea</h5>
+                            <h7>Business Owner</h7>
+                          </div>
+                          </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="review">
+                            <h2>5.00</h2>
+                            <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                          </ul>
+                          <blockquote>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                          </blockquote>
+                          <div class="client">
+                            <img src="img/pic6.jpg" alt="">
+                            <h5>Salamatu Sou</h5>
+                            <h7>Business Owner</h7>
+                          </div>
+                          </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="review">
+                            <h2>5.00</h2>
+                            <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                          </ul>
+                          <blockquote>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae a obcaecati? Aut, repellat deleniti.
+                          </blockquote>
+                          <div class="client">
+                            <img src="img/pic5.jpg" alt="">
+                            <h5>Steven Smith</h5>
+                            <h7>Business Owner</h7>
+                          </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section id="contact">
       <div class="contactContainer">
-        <h1 class="heading2" data-aos="fade-in">Have A Question?</h1>
-        <p data-aos="fade-in">
-          We have great people ready to help you whenever you need it
-        </p>
-        <span class="btn-white"><a href="#">Get In Touch</a></span>
+        <div class="innerContent">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="heading2" data-aos="fade-in">Have A Question?</h1>
+              <p data-aos="fade-in">
+              We have great people ready to help you whenever you need it
+              </p>
+              <button type="button" class="btn btn-light btn-lg" data-aos="fade-up">Get In Touch</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="news">
-      <h1 class="heading2" data-aos="fade-in">Subscribe To Our Newsletter</h1>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Your Name"
-          required
-          data-aos="fade-right"
-        />
-        <br />
-        <input
-          type="email"
-          placeholder="Email Address"
-          required
-          data-aos="fade-left"
-        />
-        <br />
-        <input
-          class=" newsSubmit"
-          type="submit"
-          value="Subscribe"
-          data-aos="fade-up"
-        />
-      </form>
-    </section>
+        <div class="innerContent">
+            <h1 class="heading2" data-aos="fade-in">Subscribe To Our Newsletter</h1>
+          <div class="row">
+            <div class="col-lg-12">
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                    data-aos="fade-left"
+                  />
+                  <br />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                    data-aos="fade-right"
+                  />
+                  <br />
+                  <input
+                    class=" newsSubmit"
+                    type="submit"
+                    value="Subscribe"
+                    data-aos="fade-up"
+                  />
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
+    
     <section id="footer">
-        <ul class="links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracking.html">Track</a></li>
-          <li><a href="location.html">Locations</a></li>
-        </ul>
-
-        <!-- <ul class="social">
-          <li>
-            <a href="#"><img src="img/facebook-black.png" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/twitter-black.png" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/googleplus-black.png" alt=""/></a>
-          </li>
-        </ul> -->
+      <div class="footerContainer">
+        <div class="row">
+          <div class="col-lg-8">
+            <ul class="links">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="location.html">Locations</a></li>       
+          </div>
+          <div class="col-lg-4">
+            <ul class="icons">
+              <li><i class="fab fa-facebook-f fa-1x"></i></li>
+            <li><i class="fab fa-twitter fa-1x"></i></li>
+            <li><i class="fab fa-google-plus-g fa-1x"></i></li>
+          </ul>
+          </div>
+        </div>
       </div>
-      <hr />
+ 
       <div class="copyright">
-        <p>Copyright © 2019 <span>Unitrans.</span> All Rights Reserved.</p>
+         <p>Copyright © 2019 <span>Unitrans.</span> All Rights Reserved.</p>
       </div>
     </section>
 
-    <script src="js/app.js"></script>
+    
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- AOS Scroll loader -->
+      <!-- AOS Scroll loader -->
 
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 70,
-        duration: 1000
-      });
-    </script>
+      <script src="js/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 70,
+          duration: 1000
+        });
+      </script>
 
     <!-- Accordion Menu -->
 
@@ -346,5 +610,12 @@
         });
       }
     </script>
+
+    <!-- Owl package javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom javascript -->
+    <script src="js/app.js"></script>
   </body>
 </html>

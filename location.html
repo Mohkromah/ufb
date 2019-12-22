@@ -74,13 +74,13 @@
       </button>
       <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="navbar-nav w-100 justify-content-center">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="tracking.html">Track</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="location.html">Location</a>
           </li>
           <li class="nav-item">
@@ -113,7 +113,8 @@
           <div class="col-lg-12">
               <h1 class="display-4 animated fadeInUp">Find Us Here!</h1>
 
-              <button
+              <div class="tabs">
+                <button
                 class="tablink animated fadeIn"
                 onclick="openPage('Home', this, '#2dbe61')"
                 id="defaultOpen"
@@ -126,6 +127,7 @@
               >
                 GHANA
               </button>
+              </div>
       
               <div id="Home" class="tabcontent">
                 <h2 class="animated fadeIn">Liberia Office Locations</h2>
@@ -313,6 +315,8 @@
           duration: 1000
         });
       </script>
+
+     
 
 
     <!-- Owl package javascript -->
